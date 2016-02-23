@@ -1,0 +1,34 @@
+<div class="home-back">
+  <ul>
+  <li>
+    <a href="/">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="/">
+      <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+    </a>
+  </li>
+  </ul>
+</div>
+
+<div class="container_view">
+  <div class="product_thumb_view">
+<div class="img_thumb_view">
+    <%= image_tag "products/#{@products.img_file}.jpg" %>
+  </div>
+  </div>
+<h1>
+  <p class="item"><%= @products.item %></p>
+  <p class="price">Price</p>
+  <p>$<%= @products.discount_price %></p>
+  <p class="description">Description</p>
+  <p><%= @products.description %></p>
+  <p class="dimensions">Dimensions</p>
+  <p>Width: <%= @products.dimension_w %></p>
+  <p>Length: <%= @products.dimension_l %></p>
+  <p>Height: <%= @products.dimension_h %></p>
+
+</h1>
+</div>

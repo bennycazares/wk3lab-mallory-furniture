@@ -1,0 +1,29 @@
+<div class="home-back">
+  <ul>
+  <li>
+    <a href="/">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+    </a>
+  </li>
+  <li>
+    <a href="/">
+      <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+    </a>
+  </li>
+  </ul>
+</div>
+
+
+
+<div class="container">
+<% @in_stock.each do |product| %>
+<div class="product_thumb">
+    <div class="img_thumb"><%= image_tag "products/#{product.img_file}.jpg", :size => "300x200" %></div>
+      <p><%= product.item %></p>
+      <p><%= product.discount_price %></p>
+      <p><%= link_to "More Info", "products/#{product.pid}",class: "btn btn-default active" %>  </p>
+</div>
+<% end %>
+
+
+</div>

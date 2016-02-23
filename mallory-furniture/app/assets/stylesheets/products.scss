@@ -1,0 +1,86 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home-back {
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    li {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+        .glyphicon-home {
+          background-color: #2D9D86;
+          color: white;
+          padding: 16px;
+          font-size: 20px;
+        }
+        .glyphicon-arrow-left {
+          background-color: #7C0808;
+          color: white;
+          padding: 16px;
+          font-size: 20px;
+        }
+    }
+  }
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.product_thumb{
+      display: flex ;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-family: 'Lora', serif;
+      border: 2px solid #E8E8E8;
+      margin: 20px 12px;
+      padding: 10px;
+        .img_thumb {
+          max-width: 100%;
+      }
+}
+.container_view {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  font-family: 'Lora', serif;
+  .product_thumb_view {
+      max-width: 50%;
+      margin: 0 auto;
+      .img_thumb_view img {
+        max-width: 100%;
+      }
+    }
+  h1{
+    flex-direction: row;
+    max-width: 50%;
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+  p {
+        font-size: 20px;
+    }
+    .item{
+      background-color: #F2C40D;
+      padding: 2px;
+
+    }
+    .price{
+      background-color: #BFF6EB;
+      padding: 2px;
+
+    }
+    .description, .dimensions{
+      background-color: #EEEEEE;
+      padding: 2px;
+
+    }
+}
